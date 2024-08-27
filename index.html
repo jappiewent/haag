@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laan van Poot</title>
+    <title>Indoorbaan Laan van Poot concept</title>
+    <style>
+        /* CSS to center the content and make the video responsive */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center; /* Center the heading text */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 640px; /* Maximum width for larger screens */
+            margin: 0 auto; /* Center the video on the page */
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Indoorbaan Laan van Poot</h1>
+<h1>Indoorbaan Laan van Poot concept</h1>
 
-    <!-- Video player -->
-    <video width="640" height="360" controls>
+<!-- Responsive video player -->
+<div class="video-container">
+    <video controls>
         <!-- Source for the video -->
         <source src="video.mp4" type="video/mp4">
         <!-- Fallback message for unsupported browsers -->
         Your browser does not support the video tag.
     </video>
+</div>
 
 </body>
 </html>
